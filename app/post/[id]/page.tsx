@@ -46,8 +46,8 @@ export default async function IdPage({ params }: { params: Params }) {
                     </p>
                 </div>
             </div>
-            <div className="relative h-[400px] w-full mb-8 overflow-hidden rounded-lg">
-                <Image src={data.imageUrl} alt={data.title} fill className="object-cover" priority/>
+            <div className="mb-8 overflow-hidden rounded-lg">
+                <Image src={data.imageUrl} alt={data.title} width={0} height={0} sizes="100vw"  className="w-full object-cover" priority/>
             </div>
             <Card>
                 <CardContent>

@@ -24,9 +24,13 @@ export async function Navbar() {
                     <Link href="/services" className="text-sm font-medium hover:text-gray-500 transition-colors">
                         Services
                     </Link>
-                    <Link href="/dashboard" className="text-sm font-medium hover:text-gray-500 transition-colors">
+                    {user ? (
+                        <Link href="/dashboard" className="text-sm font-medium hover:text-gray-500 transition-colors">
                         Dashboard
                     </Link>
+                    ): (
+                        <p className="visibility: hidden">Dashboard</p>
+                    )}
                 </div>
             </div>
 

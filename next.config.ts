@@ -17,6 +17,11 @@ const nextConfig: NextConfig = {
         hostname: 'images.unsplash.com',
         protocol: 'https',
         port: '',
+      },
+      {
+        hostname: 'i.sstatic.net',
+        protocol: 'https',
+        port: '',
       }
     ]
   }

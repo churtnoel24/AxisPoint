@@ -18,7 +18,7 @@ export async function Navbar() {
                     <Link href="/" className="text-sm font-medium hover:text-gray-500 transition-colors">
                         Home
                     </Link>
-                    <Link href="/aboutUs" className="text-sm font-medium hover:text-gray-500 transition-colors">
+                    <Link href="/aboutus" className="text-sm font-medium hover:text-gray-500 transition-colors">
                         About Us
                     </Link>
                     <Link href="/services" className="text-sm font-medium hover:text-gray-500 transition-colors">

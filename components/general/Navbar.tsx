@@ -2,6 +2,7 @@ import Link from "next/link";
 import { RegisterLink, LoginLink, LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import { buttonVariants } from "../ui/button";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+import Image from "next/image";
 
 export async function Navbar() {
     const { getUser } = getKindeServerSession();
@@ -10,16 +11,20 @@ export async function Navbar() {
     return (
         <nav className="py-5 flex items-center justify-between">
             <div className="flex items-center gap-6">
-                <Link href="/">
-                    <img 
-                        src="logo.png" 
-                        alt="Axis Point Logo" 
-                        className="h-10 w-auto"
+                <Link href="/" className="relative w-36 h-20">
+                    <Image 
+                        src="/logo.png"
+                        alt="Axis Point Logo"
+                        fill
+                        className="object-contain"
                     />
                 </Link>
                 <div className="hidden sm:flex items-center gap-6">
                     <Link href="/" className="text-sm font-medium hover:text-gray-500 transition-colors">
                         Home
+                    </Link>
+                    <Link href="/projects" className="text-sm font-medium hover:text-gray-500 transition-colors">
+                        Projects
                     </Link>
                     <Link href="/aboutus" className="text-sm font-medium hover:text-gray-500 transition-colors">
                         About Us

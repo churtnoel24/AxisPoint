@@ -20,16 +20,16 @@ export async function Navbar() {
                     />
                 </Link>
                 <div className="hidden sm:flex items-center gap-6">
-                    <Link href="/" className="text-sm font-medium hover:text-gray-500 transition-colors">
+                    <Link href="/" className="text-md font-medium hover:text-gray-500 transition-colors">
                         Home
                     </Link>
-                    <Link href="/projects" className="text-sm font-medium hover:text-gray-500 transition-colors">
+                    <Link href="/projects" className="text-md font-medium hover:text-gray-500 transition-colors">
                         Projects
                     </Link>
-                    <Link href="/aboutus" className="text-sm font-medium hover:text-gray-500 transition-colors">
+                    <Link href="/aboutus" className="text-md font-medium hover:text-gray-500 transition-colors">
                         About Us
                     </Link>
-                    <Link href="/services" className="text-sm font-medium hover:text-gray-500 transition-colors">
+                    <Link href="/services" className="text-md font-medium hover:text-gray-500 transition-colors">
                         Services
                     </Link>
                     {user ? (

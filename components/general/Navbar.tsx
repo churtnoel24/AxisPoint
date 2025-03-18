@@ -9,9 +9,9 @@ export async function Navbar() {
     const user = await getUser();
 
     return (
-        <nav className="py-5 flex items-center justify-between">
+        <nav className="sticky top-0 left-0 w-full bg-white z-50 py-5 flex items-center justify-between">
             <div className="flex items-center gap-6">
-                <Link href="/" className="relative w-36 h-20">
+                <Link href="/" className="relative w-32 h-16">
                     <Image 
                         src="/logo.png"
                         alt="Axis Point Logo"

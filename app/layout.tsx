@@ -27,14 +27,14 @@ export default function RootLayout({
   return (
     <AuthProvider>
       <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased 
-        max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`}
-      >
-        <Navbar />
-        {children}
-      </body>
-    </html>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased 
+          max-w-8xl mx-auto min-h-screen flex flex-col`}
+        >
+          <div className="px-4 sm:px-6 lg:px-8"><Navbar /></div>
+          <main className="flex-grow">{children}</main> {/* Makes content take remaining space */}
+        </body>
+      </html>
     </AuthProvider>
   );
 }

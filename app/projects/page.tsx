@@ -53,14 +53,46 @@ export default function Projects() {
         {
             title: "Public Address System",
             projects: [
-                { title: "VHF Repeater", image: "vhf.png" },
-                { title: "VHF Repeater", image: "vhf2.png" },
-                { title: "UHF Radio System", image: "uhf.png" },
-                { title: "Cross Band Repeater", image: "cross.png" },
-                { title: "HYTERA Digital Radio", image: "hytera.png" },
-                { title: "UHF Repeater", image: "uhf2.png" }
+                { title: "IP-PA System", image: "ip1.png" },
+                { title: "IP-PA System", image: "ip2.png" },
+                { title: "PA System Server", image: "server.png" },
+                { title: "PA Speaker", image: "speaker.png" },
+                { title: "PA Speaker", image: "speaker2.png" },
+                { title: "PA Speaker Analogue", image: "analogue.png" }
             ]
         },
+
+        {
+            title: "Security Services",
+            projects: [
+                { title: "Access Control System", image: "access.png" },
+                { title: "Home Alarm System", image: "home.png" },
+                { title: "Centralized Alarm System", image: "central.png" },
+                { title: "Fire Alarm System", image: "fire.png" },
+                { title: "Training Center", image: "train.png" },
+                { title: "Data Storage", image: "data.png" },
+                { title: "Network Infrastracture", image: "net.png" },
+                { title: "Storage Server", image: "storage.png" },
+                { title: "Perimeter Fence", image: "fence.png" },
+                { title: "Access Control", image: "accon.png" },
+                { title: "Command Center", image: "comm.png" },
+                { title: "TV Wall", image: "tv.png" }
+            ]
+        },
+        {
+            title: "Engineers in Action",
+            projects: [
+                { title: "Installing Internet WiFi Backhaul", image: "backhaul.png" },
+                { title: "Installing Street IP-Cams", image: "ipcam.png" },
+                { title: "Installing Street IP-Cams", image: "ipcam1.png" },
+                { title: "Installing Street IP-Cams", image: "ipcam2.png" },
+                { title: "Configuring Surveillance", image: "surv.png" },
+                { title: "Installing Wireless IP-Cams", image: "wless.png" }
+            ]
+        },
+
+        
+        
 
 
     ];

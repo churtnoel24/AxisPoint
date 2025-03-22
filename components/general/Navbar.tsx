@@ -1,12 +1,11 @@
 import Link from "next/link";
 // import { RegisterLink, LoginLink, LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 // import { buttonVariants } from "../ui/button";
-import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import Image from "next/image";
 
 export async function Navbar() {
-    const { getUser } = getKindeServerSession();
-    const user = await getUser();
+    
+    
 
     return (
         <nav className="sticky top-0 left-0 w-full bg-white z-50 py-5 flex items-center justify-between">
@@ -38,13 +37,13 @@ export async function Navbar() {
                     <Link href="/supportedtechnology" className="text-md font-medium hover:text-gray-500 transition-colors">
                         Supported Technology
                     </Link>
-                    {user ? (
+                    {/* {user ? (
                         <Link href="/dashboard" className="text-sm font-medium hover:text-gray-500 transition-colors">
                             Dashboard
                         </Link>
                     ) : (
                         <p className="invisible">Dashboard</p>
-                    )}
+                    )} */}
                 </div>
             </div>
 

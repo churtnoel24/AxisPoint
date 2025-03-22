@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { RegisterLink, LoginLink, LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
-import { buttonVariants } from "../ui/button";
+// import { RegisterLink, LoginLink, LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
+// import { buttonVariants } from "../ui/button";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import Image from "next/image";
 
@@ -32,6 +32,12 @@ export async function Navbar() {
                     <Link href="/services" className="text-md font-medium hover:text-gray-500 transition-colors">
                         Services
                     </Link>
+                    <Link href="/successlist" className="text-md font-medium hover:text-gray-500 transition-colors">
+                        Success List
+                    </Link>
+                    <Link href="/supportedtechnology" className="text-md font-medium hover:text-gray-500 transition-colors">
+                        Supported Technology
+                    </Link>
                     {user ? (
                         <Link href="/dashboard" className="text-sm font-medium hover:text-gray-500 transition-colors">
                             Dashboard
@@ -42,7 +48,7 @@ export async function Navbar() {
                 </div>
             </div>
 
-            {user ? (
+            {/* {user ? (
                 <div className="flex items-center gap-4">
                     <p>Hi, {user.given_name}!</p>
                     <LogoutLink className={buttonVariants()}>Logout</LogoutLink>
@@ -52,7 +58,7 @@ export async function Navbar() {
                     <LoginLink className={buttonVariants()}>Login</LoginLink>
                     <RegisterLink className={buttonVariants({ variant: "secondary" })}>Sign Up</RegisterLink>
                 </div>
-            )}
+            )} */}
         </nav>
     );
 }

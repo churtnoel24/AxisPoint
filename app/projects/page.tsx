@@ -98,7 +98,7 @@ export default function Projects() {
     ];
 
     return (
-        <div className="bg-gray-100 py-10 px-6 flex justify-center">
+        <div className="bg-gradient-to-b from-blue-100 to-red-100 py-10 px-8 flex justify-center">
             <div className="max-w-6xl bg-white p-12 rounded-lg shadow-lg">
                 
                 {/* HEADER */}

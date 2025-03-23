@@ -48,7 +48,7 @@ export default function SuccessList() {
     ];
 
     return (
-        <div className="bg-gray-100 py-10 px-6 flex justify-center items-center">
+        <div className="bg-gradient-to-b from-blue-100 to-red-100 py-10 px-8 flex justify-center">
             <div className="max-w-6xl bg-white p-12 rounded-lg shadow-lg w-full">
                 <div className="mb-12">
                     <h1 className="text-5xl font-bold text-gray-800">Success List</h1>

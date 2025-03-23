@@ -16,7 +16,7 @@ return data;
 export default function Home() {
 
   return (
-    <div className="py-6 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-red-100 py-6 px-4 sm:px-6 lg:px-8">
       <h1 className="text-3xl font-semibold text-gray-800 mb-4">What&apos;s New?</h1>
       <Suspense fallback={<BlogPostsGrid />}>
       <Posts />

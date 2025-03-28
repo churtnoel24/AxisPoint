@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
     "@kinde-oss/kinde-auth-nextjs": "^2.5.3",
     "@prisma/client": "^6.5.0",
     "@radix-ui/react-label": "^2.1.2",

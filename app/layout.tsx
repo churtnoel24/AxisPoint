@@ -39,7 +39,7 @@ export default function RootLayout({
           max-w-8xl mx-auto min-h-screen flex flex-col`}
         >
 
-          <div className="sticky top-0 left-0 w-full bg-white px-4 sm:px-6 lg:px-8 shadow-md">
+          <div className="sticky top-0 left-0 w-full bg-blue-100 px-4 sm:px-6 lg:px-8 shadow-md z-50">
             <Navbar />
           </div>
           <main className="flex-grow">{children}</main>

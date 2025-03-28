@@ -37,6 +37,9 @@ export async function Navbar() {
                     <Link href="/supportedtechnology" className="text-md font-medium hover:text-gray-500 transition-colors">
                         Supported Technology
                     </Link>
+                    <Link href="/permits" className="text-md font-medium hover:text-gray-500 transition-colors">
+                        Our Permits
+                    </Link>
                     {/* {user ? (
                         <Link href="/dashboard" className="text-sm font-medium hover:text-gray-500 transition-colors">
                             Dashboard

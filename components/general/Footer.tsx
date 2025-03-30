@@ -36,7 +36,7 @@ export default function Footer() {
       </div>
 
       {/* Copyright Section */}
-      <div className="text-center mt-6 border-t border-gray-700 pt-4">
+      <div className="text-center mt-6 pt-4">
         <p className="text-sm text-gray-400">
           &copy; {new Date().getFullYear()} AxisPoint Technologies. All rights reserved.
         </p>

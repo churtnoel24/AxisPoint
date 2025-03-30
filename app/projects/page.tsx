@@ -121,7 +121,7 @@ export default function Projects() {
                                         alt={project.title} 
                                         className="w-full h-40 object-cover rounded-lg mb-4 shadow-md"
                                     />
-                                    <h3 className="text-2xl font-semibold text-gray-800">{project.title}</h3>
+                                    <h3 className="text-1xl font-semibold text-gray-800">{project.title}</h3>
                                 </div>
                             ))}
                         </div>

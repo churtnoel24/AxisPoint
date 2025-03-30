@@ -18,6 +18,7 @@ export async function Navbar() {
                         className="object-contain"
                     />
                 </Link>
+                
                 <div className="hidden sm:flex items-center gap-6">
                     <Link href="/" className="text-md font-medium hover:text-gray-500 transition-colors">
                         Home
@@ -26,7 +27,7 @@ export async function Navbar() {
                         Projects
                     </Link>
                     <Link href="/aboutus" className="text-md font-medium hover:text-gray-500 transition-colors">
-                        About Us
+                        About
                     </Link>
                     <Link href="/services" className="text-md font-medium hover:text-gray-500 transition-colors">
                         Services
@@ -38,7 +39,10 @@ export async function Navbar() {
                         Supported Technology
                     </Link>
                     <Link href="/permits" className="text-md font-medium hover:text-gray-500 transition-colors">
-                        Our Permits
+                        Permits
+                    </Link>
+                    <Link href="/contacts" className="text-md font-medium hover:text-gray-500 transition-colors">
+                        Contacts
                     </Link>
                     {/* {user ? (
                         <Link href="/dashboard" className="text-sm font-medium hover:text-gray-500 transition-colors">

@@ -1,5 +1,3 @@
-import { Mail, Phone, MapPin, Facebook } from "lucide-react";
-
 export default function AboutUs() {
     return (
         <div className="bg-gradient-to-b from-blue-100 to-red-100 py-10 px-8 flex justify-center">
@@ -56,7 +54,7 @@ export default function AboutUs() {
                         <div className="p-6 border rounded-lg shadow-md bg-white mb-6">
                             <h2 className="text-3xl font-semibold text-gray-800 mb-3 text-center">Our Vision</h2>
                             <p className="text-gray-700 leading-relaxed text-justify">
-                                To be the nation's premier technology services partner, committed to delivering world-class IT solutions 
+                                To be the nation&apos;s premier technology services partner, committed to delivering world-class IT solutions 
                                 while ensuring the security, efficiency, and growth of our clients.
                             </p>
                         </div>

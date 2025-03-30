@@ -1,9 +1,8 @@
-import { Mail, Phone, MapPin, Facebook } from "lucide-react";
 
 export default function AboutUs() {
     return (
         <div className="bg-gradient-to-b from-blue-100 to-red-100 py-10 px-8 flex justify-center">
-            <div className="max-w-6xl bg-white p-8 rounded-lg shadow-lg">
+            <div className="max-w-6xl bg-white p-16 rounded-3xl">
                 
                 {/* ABOUT US SECTION */}
                 <div className="flex flex-col md:flex-row items-center gap-8">

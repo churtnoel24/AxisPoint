@@ -4,7 +4,7 @@ import { Facebook as FacebookIcon } from "lucide-react";
 export default function Contacts() {
     return (
         <div className="bg-gradient-to-b from-blue-200 to-red-200 py-14 px-8 flex justify-center">
-            <div className="max-w-6xl bg-white p-16 rounded-3xl shadow-2xl border-8 border-gray-200">
+            <div className="max-w-6xl bg-white p-20 rounded-3xl">
                 {/* HEADER SECTION */}
                 <div className="text-center mb-8">
                     <h1 className="text-5xl font-bold text-gray-900">Contact Us</h1>

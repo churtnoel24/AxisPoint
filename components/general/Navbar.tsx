@@ -8,7 +8,7 @@ export async function Navbar() {
     
 
     return (
-        <nav className="z-50 py-5 flex items-center justify-between">
+        <nav className="z-50 py-5 flex items-center justify-center">
             <div className="flex items-center gap-6">
                 <Link href="/" className="relative w-32 h-16">
                     <Image 

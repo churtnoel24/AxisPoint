@@ -18,6 +18,7 @@ export default function Footer() {
       <li><a href="/aboutus" className="hover:text-white transition">About</a></li>
       <li><a href="/services" className="hover:text-white transition">Services</a></li>
       <li><a href="/projects" className="hover:text-white transition">Projects</a></li>
+      <li><a href="/contacts" className="hover:text-white transition">Contact Us</a></li>
     </ul>
   </nav>
 </div>

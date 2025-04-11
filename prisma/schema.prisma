@@ -8,14 +8,13 @@ datasource db {
 }
 
 model BlogPost {
-  id          String @id @default(uuid())
+  id          String   @id @default(uuid())
   title       String
   content     String
-  imageUrl    String
+  imageUrls   String[]
   authorId    String
   authorName  String
   authorImage String
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }

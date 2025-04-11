@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ImageCarousel from "@/components/general/ImageCarousel";
 
 async function getData(idPost: string) {
     const data = await prisma.blogPost.findUnique({
@@ -46,9 +47,7 @@ export default async function IdPage({ params }: { params: Params }) {
                     </p>
                 </div>
             </div>
-            <div className="mb-8 overflow-hidden rounded-lg">
-                <Image src={data.imageUrl} alt={data.title} width={0} height={0} sizes="100vw"  className="w-full object-cover" priority/>
-            </div>
+            <ImageCarousel imageUrls={data.imageUrls} />
             <Card>
                 <CardContent>
                     <p className="text-gray-700">{data.content}</p>

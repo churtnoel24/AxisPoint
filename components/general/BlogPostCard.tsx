@@ -9,7 +9,7 @@ interface IappProps {
         id: string;
         title: string;
         content: string;
-        imageUrls: string;
+        imageUrls: string[];
         authorId: string;
         authorName: string;
         authorImage: string;

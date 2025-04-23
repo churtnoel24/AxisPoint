@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin, Facebook } from "lucide-react";
 
 export default function Contacts() {
     return (
-        <div className="bg-gradient-to-b from-blue-200 to-red-200 py-14 px-4 sm:px-8 flex justify-center">
+        <div className="bg-[#001f3f] py-14 px-4 sm:px-8 flex justify-center">
             <div className="max-w-6xl bg-white p-6 sm:p-12 md:p-16 rounded-3xl">
                 {/* HEADER SECTION */}
                 <div className="text-center mb-6 md:mb-8">

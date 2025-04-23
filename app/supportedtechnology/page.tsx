@@ -24,7 +24,7 @@ export default function SupportedRoute() {
     ];
 
     return (
-        <div className="bg-gradient-to-b from-blue-100 to-red-100 py-10 px-8 flex justify-center">
+        <div className="bg-[#001f3f] py-10 px-8 flex justify-center">
             <div className="max-w-6xl w-full bg-white p-10 rounded-3xl shadow-xl">
                 {/* HEADER */}
                 <div className="text-center mb-8">

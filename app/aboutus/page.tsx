@@ -1,7 +1,6 @@
-
 export default function AboutUs() {
     return (
-        <div className="bg-gradient-to-b from-blue-100 to-red-100 py-10 px-8 flex justify-center">
+        <div className="bg-[#001f3f] py-10 px-8 flex justify-center">
             <div className="max-w-6xl bg-white p-16 rounded-3xl">
                 
                 {/* ABOUT US SECTION */}
@@ -16,7 +15,6 @@ export default function AboutUs() {
                         />
                     </div>
                     
-
                     {/* Text Section (Right Side) */}
                     <div className="w-full md:w-2/3">
                         <h1 className="text-5xl font-bold text-gray-800 mb-6 text-center">About Us</h1>
@@ -87,8 +85,6 @@ export default function AboutUs() {
 
                     </div>
                 </div>
-
-             
 
             </div>
         </div>

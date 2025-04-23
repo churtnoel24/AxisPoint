@@ -1,0 +1,147 @@
+/* Base Container */
+.overlay-container {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, #001f3f 0%, #000c1f 100%);
+  overflow: hidden;
+  color: white;
+}
+
+/* Floating Icons */
+.background-shapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.icon {
+  position: absolute;
+  animation: floatUp 30s linear infinite;
+  opacity: 0.15;
+  filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.3));
+}
+
+.icon svg {
+  width: 50px;
+  height: 50px;
+  color: #00ccff;
+  stroke-width: 1.25;
+  animation: subtlePulse 10s ease-in-out infinite;
+}
+
+/* Icon Positions */
+.icon1 { bottom: -10%; left: 5%; animation-delay: 0s; }
+.icon2 { bottom: -10%; left: 20%; animation-delay: 5s; }
+.icon3 { bottom: -10%; left: 40%; animation-delay: 10s; }
+.icon4 { bottom: -10%; left: 60%; animation-delay: 15s; }
+.icon5 { bottom: -10%; left: 80%; animation-delay: 20s; }
+
+/* Waves */
+.glow-waves {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('/wave-lines.svg') center/cover no-repeat;
+  opacity: 0.2;
+  animation: waveFloat 15s ease-in-out infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Glass Panel */
+.glass-panel {
+  position: relative;
+  z-index: 2;
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 60px rgba(0, 255, 255, 0.08);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+/* Button */
+.button {
+  padding: 12px 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  transition: 0.3s ease;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.button:hover {
+  background-color: rgba(0, 153, 255, 0.4);
+  box-shadow: 0 0 12px rgba(0, 153, 255, 0.4);
+}
+
+/* Title Glow */
+.glow-red-hint {
+  color: #fff;
+  text-shadow: 0 0 10px #ff5555, 0 0 20px #ff2d2d;
+}
+.glow-blue-hint {
+  color: #fff;
+  text-shadow: 0 0 10px #5599ff, 0 0 20px #2d74ff;
+}
+
+/* Animations */
+@keyframes waveFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100vh); opacity: 0.1; }
+  50% { opacity: 0.4; }
+  100% { transform: translateY(-100vh); opacity: 0.1; }
+}
+
+@keyframes subtlePulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tech-floor {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: url('/grid-waves.svg') center bottom / cover no-repeat;
+  opacity: 0.2;
+  z-index: 1;
+  pointer-events: none;
+  animation: floatGlow 15s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+  0%, 100% { transform: translateY(0); opacity: 0.2; }
+  50% { transform: translateY(-8px); opacity: 0.3; }
+}

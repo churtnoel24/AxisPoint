@@ -9,7 +9,7 @@ interface IappProps {
         id: string;
         title: string;
         content: string;
-        imageUrls: string;
+        imageUrls: string[];
         authorId: string;
         authorName: string;
         authorImage: string;
@@ -30,6 +30,7 @@ export function BlogPostCard({ data, isAdmin }: IappProps) {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ id: data.id }),
+            
         });
 
         if (res.ok) {

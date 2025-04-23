@@ -10,7 +10,7 @@ interface ImageCarouselProps {
   imageUrls: string[];
 }
 
-function NextArrow({ onClick }: any) {
+function NextArrow({ onClick }: { onClick?: () => void }) {
   return (
     <div
       onClick={onClick}
@@ -21,7 +21,7 @@ function NextArrow({ onClick }: any) {
   );
 }
 
-function PrevArrow({ onClick }: any) {
+function PrevArrow({ onClick }: { onClick?: () => void }) {
   return (
     <div
       onClick={onClick}

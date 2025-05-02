@@ -35,9 +35,9 @@ export default async function IdPage({ params }: { params: Params }) {
                 <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-2">
                         <div className="relative size-10 overflow-hidden rounded-full">
-                            <Image src={data.authorImage} alt={data.authorName} fill className="object-cover" />
+                            <Image src='/axislogo.jpg' alt={data.authorName} fill className="object-cover" />
                         </div>
-                        <p className="font-medium">{data.authorName}</p>
+                        <p className="font-medium">AxisPoint Technologies</p>
                     </div>
                     <p className="text-sm text-gray-500">{new Intl.DateTimeFormat('en-US', {
                         year: 'numeric',

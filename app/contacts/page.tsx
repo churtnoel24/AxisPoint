@@ -42,7 +42,7 @@ export default function Contacts() {
 const contactItems = [
     { Icon: Mail, text: "axispoint@icloud.com", link: "mailto:axispoint@icloud.com" },
     { Icon: Phone, text: "+63 969 293 2967", link: "tel:+639692932967" },
-    { Icon: MapPin, text: "113 Kessing St. New Kalalake, Olongapo City", link: "https://www.google.com/maps/search/?api=1&query=113+Kessing+St.+New+Kalalake,+Olongapo+City" },
+    { Icon: MapPin, text: "113 Kessing St., New Kalalake, Olongapo City", link: "https://www.google.com/maps/search/?api=1&query=113+Kessing+St.+New+Kalalake,+Olongapo+City" },
     { Icon: Facebook, text: "AxisPoint Technologies", link: "https://www.facebook.com/share/1BNbMHsbpM/" }
   ];
   
